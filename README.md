@@ -1,4 +1,4 @@
-# E-Commerce - Madame Modas
+# E-Commerce Madame Modas ✨
 
 Esta aplicação foi desenvolvida para simular a experiência de compra online de uma loja de roupas e acessórios. Os usuários podem visualizar diferentes categorias de roupas, pesquisar produtos e adicionar itens ao carrinho. A aplicação é completamente responsiva e otimizada para dispositivos móveis.
 
