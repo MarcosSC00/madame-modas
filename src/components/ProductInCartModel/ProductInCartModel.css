@@ -1,0 +1,142 @@
+.container-cart {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 30px;
+    position: relative;
+}
+
+.content-cart {
+    max-width: 560px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
+    background-color: whitesmoke;
+    box-shadow: 2px 4px 6px -1px #00000030;
+}
+
+.content-cart .info-cart {
+    display: flex;
+    padding-inline: 20px;
+    gap: 30px;
+    align-items: center;
+}
+
+.content-cart h2 {
+    font-size: 15px;
+    flex: 1;
+}
+
+.content-cart .img-prod {
+    width: 200px;
+    display: flex;
+}
+
+.content-cart .img-prod img {
+    border-radius: 8px 0px 0px 8px;
+}
+
+.content-cart .btn-increments {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.content-cart .btn-increments button {
+    border: none;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50%;
+    background-color: #bbb9b6;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.content-cart .price {
+    display: flex;
+    justify-content: center;
+    padding: 4px 6px;
+    background-color: blueviolet;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 80px;
+    height: 27px;
+}
+
+.info-cart .price-qtd {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-remove {
+    width: 25px;
+    height: 25px;
+    align-content: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(50%);
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 954px) {
+    .content-cart{
+        width: 480px;
+    }
+}
+
+@media screen and (max-width: 854px) {
+    .container-cart{
+        width: 50%;
+        align-items: center;
+    }
+    .content-cart {
+        max-width: 250px;
+        flex-direction: column;
+    }
+
+    .info-cart {
+        padding: 20px;
+    }
+
+    .info-cart .price-qtd {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .content-cart .img-prod {
+        width: 100%;
+    }
+
+    .content-cart .btn-increments button {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-cart {
+        align-items: center;
+    }
+}

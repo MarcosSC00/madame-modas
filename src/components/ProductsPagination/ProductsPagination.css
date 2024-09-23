@@ -1,0 +1,42 @@
+
+.pagination .prods{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
+}
+.pagination{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.result > div, .pagination .prods > div{
+    margin-block: 50px;
+}
+.toggle-btns{
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+}
+.toggle-btns button{
+    outline: none;
+    border: none;
+    display: flex;
+    padding: 5px;
+    background-color: blueviolet;
+    color: aliceblue;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.toggle-btns button:hover{
+    background-color: rgb(78, 0, 151);
+}
+.toggle-btns button:disabled{
+    cursor: auto;
+    background-color: rgb(155, 112, 196);
+}
+@media screen and (max-width: 768px) {
+
+}

@@ -1,0 +1,47 @@
+.content-banner {
+    width: 100%;
+    margin-top: 79px;
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    position: relative;
+}
+
+.input-banner {
+    display: flex;
+    width: 300px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-banner input {
+    padding: 7px 12px;
+    outline: none;
+    font-size: 18px;
+    border: none;
+}
+
+.input-banner button {
+    color: aliceblue;
+    background-color: blueviolet;
+    border: none;
+    padding: 7px 12px;
+    cursor: pointer;
+}
+
+.input-banner button a {
+    color: aliceblue;
+}
+
+@media screen and (max-width: 768px) {
+    .content-banner{
+        display: none;
+    }
+    .input-banner {
+        width: 250px;
+    }
+}

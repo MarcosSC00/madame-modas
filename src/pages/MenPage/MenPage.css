@@ -1,0 +1,37 @@
+.content-men-page {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.content-men-page > div{
+    margin-block: 50px;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.title{
+    align-self: flex-start;
+    color: #3b546a;
+}
+@media screen and (max-width: 486px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .title{
+        margin-bottom: 30px;
+        align-self: center;
+    }
+    .content-men-page{
+        justify-content: center;
+    }
+}

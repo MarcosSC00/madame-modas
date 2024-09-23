@@ -1,0 +1,50 @@
+.content-bubble {
+    width: 100%;
+}
+
+.content-bubble .product-bubble-left {
+    left: -15px;
+    background-color: green;
+}
+
+.content-bubble .product-bubble-right {
+    right: -25px;
+    background-color: red;
+}
+
+.product-bubble-left,
+.product-bubble-right {
+    width: 50px;
+    height: 22px;
+    font-size: 11px;
+    font-weight: 600;
+    color: beige;
+    position: absolute;
+    top: -10px;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    align-content: center;
+    z-index: 1000;
+}
+
+.product-bubble-left::after,
+.product-bubble-right::after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: auto;
+    bottom: -6px;
+    border: 6px solid;
+}
+
+.product-bubble-left::after {
+    right: 6px;
+    border-color: transparent green transparent transparent;
+}
+
+.product-bubble-right::after {
+    left: 6px;
+    border-color: transparent transparent transparent red;
+}
